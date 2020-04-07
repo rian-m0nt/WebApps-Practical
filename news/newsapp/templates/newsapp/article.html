@@ -1,9 +1,17 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Story - {{article.story_title}}</title>
 </head>
 <body>
+<div class="container">
+    <nav class="navbar">
+        <p>Dalton Daily News</p>
+    </nav>
     <h1>{{article.story_title}}</h1>
     <p>Published on: {{article.publication_date}}</p>
     <p>{{article.story_text}}</p>
+    <a href="{% url 'stories:index' %}">Back to todays news</a>
+</div>
 </body>
 </html>

@@ -1,23 +1,31 @@
 <html>
 <head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <title>Todays News</title>
 </head>
 <body>
-<h1>Welcome to the News App</h1>
+<div class="container">
+    <nav class="navbar">
+        <p class="nav-brand">Dalton Daily News</p>
+    </nav>
+    <h1>Todays News</h1>
+    <ul class="list-group">
+        {% if latest_story_list %}
 
-{% if latest_story_list %}
-    <ul>
-    {% for story in latest_story_list %}
-        <li>
-            <a href="{% url 'stories:article' story.id%}">{{ story.story_title }}</a>
-            <p>{{story.publication_date}}</p>
-            <p>{{story.story_text}}</p>
-        </li>
+            {% for story in latest_story_list %}
+                <li class="list-group-item">
+                    <h1><a href="{% url 'stories:article' story.id%}">{{ story.story_title }}</a></h1>
+                    <p>{{story.publication_date}}</p>
+                    <p>{{story.story_text}}</p>
+                </li>
 
-    {% endfor %}
+            {% endfor %}
+
+        {% else %}
+            <p>No stories are available.</p>
+        {% endif %}
     </ul>
-{% else %}
-    <p>No stories are available.</p>
-{% endif %}
+</div>
 </body>
 </html>

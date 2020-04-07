@@ -1,16 +1,20 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from .models import Story
 from django.template import loader
 # Create your views here.
 
 def index(request):
     latest_story_list = Story.objects.order_by('-publication_date')[:5]
-    template = loader.get_template('newsapp/index.html')
+
     context = {
         'latest_story_list': latest_story_list,
     }
-    return HttpResponse(template.render(context, request))
+    return render(request, 'newsapp/index.html', context)
 
 def article(request, story_id):
-    return HttpResponse("You're looking at story " % story_id)
+    try:
+        story = Story.objects.get(pk=story_id)
+    except Story.DoesNotExist:
+        raise Http404("Story does not exist")
+    return HttpResponse("You're looking at story %s" % story_id)

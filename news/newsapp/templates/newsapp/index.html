@@ -1,0 +1,18 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Welcome to the News App</h1>
+
+{% if latest_story_list %}
+    <ul>
+    {% for story in latest_story_list %}
+        <li><a href="/stories/{{ story.id }}/">{{ story.story_title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No stories are available.</p>
+{% endif %}
+</body>
+</html>

@@ -7,16 +7,16 @@
 <body>
 <div class="container">
     <nav class="navbar">
-        <p class="nav-brand">Dalton Daily News</p>
+        <p class="navbar-brand">Daily News</p>
     </nav>
     <h1>Todays News</h1>
-    <ul class="list-group">
+    <ul class="list-group list-group-flush">
         {% if latest_story_list %}
 
             {% for story in latest_story_list %}
                 <li class="list-group-item">
                     <h1><a href="{% url 'stories:article' story.id%}">{{ story.story_title }}</a></h1>
-                    <p>{{story.publication_date}}</p>
+                    <small>{{story.publication_date}}</small>
                     <p>{{story.story_text}}</p>
                 </li>
 

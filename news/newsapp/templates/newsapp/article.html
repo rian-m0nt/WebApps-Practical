@@ -6,12 +6,13 @@
 <body>
 <div class="container">
     <nav class="navbar">
-        <p>Dalton Daily News</p>
+        <p class="navbar-brand">Daily News</p>
     </nav>
+    <a href="{% url 'stories:index' %}">Back to todays news</a>
     <h1>{{article.story_title}}</h1>
     <p>Published on: {{article.publication_date}}</p>
     <p>{{article.story_text}}</p>
-    <a href="{% url 'stories:index' %}">Back to todays news</a>
+
 </div>
 </body>
 </html>

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e01d946-1f60-4ec2-a73d-a90209360e09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/newsapp/templates/newsapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/news/newsapp/templates/newsapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/news/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/news/news/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news/news/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="14" />
+            <state relative-caret-position="215">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -80,7 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -116,13 +114,13 @@
         <option value="$PROJECT_DIR$/news/newsapp/admin.py" />
         <option value="$PROJECT_DIR$/news/news/templates/index.html" />
         <option value="$PROJECT_DIR$/news/newsapp/templates/index.html" />
-        <option value="$PROJECT_DIR$/news/news/settings.py" />
         <option value="$PROJECT_DIR$/news/newsapp/views.py" />
         <option value="$PROJECT_DIR$/news/newsapp/urls.py" />
         <option value="$PROJECT_DIR$/news/newsapp/models.py" />
         <option value="$PROJECT_DIR$/news/news/urls.py" />
         <option value="$PROJECT_DIR$/news/newsapp/templates/newsapp/index.html" />
         <option value="$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html" />
+        <option value="$PROJECT_DIR$/news/news/settings.py" />
       </list>
     </option>
   </component>
@@ -212,11 +210,11 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Educational.CheckDetails" />
       <window_info anchor="bottom" id="Version Control" weight="0.27972028" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.34096387" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.34096387" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -237,7 +235,8 @@
     <MESSAGE value="Working templates" />
     <MESSAGE value="Added all functionality" />
     <MESSAGE value="Added bootstrap for nicer styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bootstrap for nicer styling" />
+    <MESSAGE value="Cosmetic updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cosmetic updates" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/news/news/wsgi.py">
@@ -260,13 +259,6 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/news/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -297,6 +289,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news/newsapp/templates/newsapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -304,10 +303,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news/newsapp/templates/newsapp/article.html">
+    <entry file="file://$PROJECT_DIR$/news/news/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="215">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
